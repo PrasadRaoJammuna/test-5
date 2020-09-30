@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+ 
+ 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>CDots </title>
+  </head>
+  <body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <center><h1 style="color:white;"> ConnectingDots</h1></center>
+      </nav>
+
+
+       
+<!------ Include the above in your HEAD tag ---------->
+
+<section class="testimonial py-5" id="testimonial">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 py-5 bg-primary text-white text-center ">
+                <div class=" ">
+                    <div class="card-body">
+                        <img class="rounded mx-auto d-block img-thumbnail" src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?cs=srgb&dl=pexels-pixabay-267885.jpg&fm=jpg" style="width:100%">
+                        
+                        
+                        <h2 class="py-3">Student Future Prediction</h2>
+                        <p>
+                            <b>We will help you to predict 
+                           
+                           <h5>FUTURE</h5></b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="col-md-8 py-5 border">
+                <h4 class="pb-4">Please fill the STUDENT Details</h4>
+               
+                <form action='/predict' method="POST">
+
+                    <div class="form-row">
+
+                        <!-- Class year -->
+                        <div class="form-group col-md-6">
+                          <input id="Age" name="year"  placeholder="Enter your Passed out year(Eg:2020)." class="form-control" type="text" required>
+                        </div>
+
+                        <!-- Gender -->
+                        <div class="form-group col-md-6">      
+                            <select id="inputState" class="form-control" name='gender' required>
+                              <option selected>Select your Gender</option>
+                              <option value='0'>Female</option>
+                              <option value='1'>Male</option>
+                            </select>
+                         </div>
+                      </div>
+
+                      <!-- Ethnicity -->
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">      
+                            <select id="inputState" class="form-control" name='ethnicity' required>
+                              <option selected>Choose your Ethnicity</option>
+                              <option value='0'>AFRICAN AMERICAN</option>
+                              <option value='1'>African American</option>
+                              <option value='2'>African-American</option>
+                              <option value='3'>American Indian</option>
+                              <option value='4'>Asian</option>
+                              <option value='5'>Asian Indian</option>
+                              <option value='6'>Asian/Korean</option>
+                              <option value='7'>Black</option>
+                              <option value='8'> Black Or African American</option>
+                              <option value='9'> Black White Native American</option>
+                              <option value='10'> Black/Korean</option>
+                              <option value='11'>Caucasian </option>
+                              <option value='12'> Caucasian/Hispanic</option>
+                              <option value='13'>Caucasion </option>
+                              <option value='14'>Caucason </option>
+                              <option value='15'> Causcasian</option>
+                              <option value='16'>Chinese </option>
+                              <option value='17'>Dual Citizen </option>
+                              <option value='18'>Filipino </option>
+                              <option value='19'> Hispanic</option>
+                              <option value='20'>Hispanic/Caucasian </option>
+                              <option value='21'>Indian </option>
+                              <option value='22'>Multicultural </option>
+                              <option value='23'>White </option>
+                              
+                            </select>
+                         </div>
+
+                        <div class="form-group col-md-6">
+                                  
+                                  <select id="inputState" class="form-control" name='major' required>
+                                    <option selected>Choose Prospective Major</option>
+                                    <option value='0'> Archaeology</option>
+                                    <option value='1'>Architecture</option>
+                                    <option value='2'>Art</option>
+                                    <option value='3'>Art History</option>
+                                    <option value='4'>Biochemistry</option>
+                                    <option value='5'>Bioengineering</option>
+                                    <option value='6'>Biology</option>
+                                    <option value='7'> Biology/Pre-Med</option>
+                                    <option value='8'>Boys</option>
+                                    <option value='9'>Business</option>
+                                    <option value='10'>Business Management</option>
+                                    <option value='11'>Chemistry</option>
+                                    <option value='12'>Chemistry/Physics</option>
+                                    <option value='13'>Civil Engineering</option>
+                                    <option value='14'>Communications</option>
+                                    <option value='15'>Computer Science</option>
+                                    <option value='16'>Computer Science And Engineering</option>
+                                    <option value='17'>Criminal Justice</option>
+                                    <option value='18'>Dietetics</option>
+                                    <option value='19'>Ecology</option>
+                                    <option value='20'>Economics</option>
+                                    <option value='21'>Education</option>
+                                    <option value='22'>Elementary Education</option>
+                                    <option value='23'>Engineering</option>
+                                    <option value='24'>English</option>
+                                    <option value='25'>Finance</option>
+                                    <option value='26'>Fine Arts</option>
+                                    <option value='27'>Government</option>
+                                    <option value='28'>History And Spanish</option>
+                                    <option value='29'>Human Develpoment And Family Studies</option>
+                                    <option value='30'>Industrial Engineering</option>
+                                    <option value='31'>Law</option>
+                                    <option value='32'>Management</option>
+                                    <option value='33'>Marine Biology</option>
+                                    <option value='34'>Marketing</option>
+                                    <option value='35'>Math</option>
+                                    <option value='36'>Mathematics</option>
+                                    <option value='37'>Med</option>
+                                    <option value='38'>Medicine</option>
+                                    <option value='39'>Music</option>
+                                    <option value='40'>Music Business</option>
+                                    <option value='41'>Neonatal Physician</option>
+                                    <option value='42'>Neuroscience</option>
+                                    <option value='43'>Nursing</option>
+                                    <option value='44'>Pediatrics</option>
+                                    <option value='45'>Petroleum Engineering</option>
+                                    <option value='46'>Pharmacy</option>
+                                    <option value='47'>Physical Therapy</option>
+                                    <option value='48'>Physics</option>
+                                    <option value='49'>Political Science</option>
+                                    <option value='50'>Possibly English</option>
+                                    <option value='51'>Pre-Dent/Pre-Opt/Nursing</option>
+                                    <option value='52'>Pre-Med</option>
+                                    <option value='53'>Pre-Medicine</option>
+                                    <option value='54'>Psych</option>
+                                    <option value='55'>Psychology</option>
+                                    <option value='56'>Psychology/Neuroscience</option>
+                                    <option value='57'>Undecided</option>
+                                    <option value='58'>Undecided</option>
+                                   
+
+                                  </select>
+                                </div>     
+                    </div>
+                
+                    <!--  2-row -->
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                                  
+                            <select id="inputState" class="form-control" name='school' required>
+                              <option selected>Select your School</option>
+                              <option value='0'>Home School</option>
+                              <option value='1'>Parochial</option>
+                              <option value='2'>Private</option>
+                              <option value='3'>Public</option>
+                              
+                            </select>
+                         </div>
+
+                        <div class="form-group col-md-6">
+                                  
+                                  <select id="inputState" class="form-control" name='location' required>
+                                    <option selected>Choose High school Location</option>
+                                    <option value='0'>AZ</option>
+                                    <option value='1'>CA</option>
+                                    <option value='2'>CT</option>
+                                    <option value='3'>DE</option>
+                                    <option value='4'>FL</option>
+                                    <option value='5'>GA</option>
+                                    <option value='6'>GU</option>
+                                    <option value='7'>IL</option>
+                                    <option value='8'>IN</option>
+                                    <option value='9'>KY</option>
+                                    <option value='10'>LA</option>
+                                    <option value='11'>MA</option>
+                                    <option value='12'>ME</option>
+                                    <option value='13'>MI</option>
+                                    <option value='14'>MN</option>
+                                    <option value='15'>NC</option>
+                                    <option value='16'>NJ</option>
+                                    <option value='17'>NY</option>
+                                    <option value='18'>OH</option>
+                                    <option value='19'>OR</option>
+                                    <option value='20'>PA</option>
+                                    <option value='21'>TN</option>
+                                    <option value='22'>TX</option>
+                                    <option value='23'>VA</option>
+                                    <option value='24'>VT</option>
+                                    <option value='25'>WA</option>
+                                    <option value='26'>WI</option>
+                                    <option value='27'>XX</option>
+                                    
+
+                                  </select>
+                                </div>     
+                    </div>
+
+                    <!-- 3-row -->
+                    <div class="form-row">
+
+                    <div class="form-group col-md-6">          
+                        <select id="inputState" class="form-control" name='ib' required>
+                          <option selected>IB Candidate</option>
+                          <option value='0'>NO</option>
+                          <option value='1'>YES</option>
+                        </select>
+                    </div> 
+                    
+                    <div class="form-group col-md-6">
+                        <input id="Age" name="gpaun"  placeholder="Enter your GPA Unweighted (Eg: 4)." class="form-control" type="text" required>
+                    </div>
+
+                    </div>
+
+                    <!-- Row-5 -->
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input id="Age" name="gpaw"  placeholder="Enter your GPA Weighted (Eg:3)." class="form-control" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="satmath" placeholder=" SAT Score: Mathematics (Eg:560)" name='satmath' required>
+                        </div>
+                      </div>
+<!--  -->
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input id="Age" name="satwriting"  placeholder="SAT Score: Writing (Eg:650)" class="form-control" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="Fever" placeholder="SAT Score:Evidence based reading & writing (Eg:600)" name='satrw' required>
+                        </div>
+                      </div>
+<!--  -->
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input id="Age" name="satread"  placeholder="SAT Score:Reading (Eg:440)" class="form-control" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="Fever" placeholder="SAT Score:Writing language (Eg:50)" name='satwrite' required>
+                        </div>
+                      </div>
+
+<!--  -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">    
+                            <select id="inputState" class="form-control" name='scorefrom' required>
+                              <option selected>Test scores from</option>
+                              <option value='1'>Single Test</option>
+                              <option value='0'>Multiple Test</option>
+                            </select>
+                         </div>
+
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="Fever" placeholder="SAT Score: ACT Composite (Eg:35)" name='satact' required>
+                        </div>   
+
+                    </div>
+
+<!--  -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input id="Age" name="heng"  placeholder="Enter Honors of English (Eg:5)" class="form-control" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="Fever" placeholder="Enter Honors of Mathematics (Eg:4)" name='hmath' required>
+                        </div>
+                      </div>
+<!--  -->
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input id="Age" name="hscience"  placeholder="Enter Honors of Science (Eg:4)" class="form-control" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="Fever" placeholder="Enter Honors of language Other than English (Eg:5)" name='hoteng' required>
+                        </div>
+                      </div>
+<!--  -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <input id="Age" name="hsocial"  placeholder="Enter Honors of Social Studies (Eg:3)" class="form-control" type="text" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="Fever" placeholder="Enter Honors of Visual Performing Arts(Eg:5)" name='hvart' required>
+                    </div>
+                </div>
+ <!--  -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <input id="Age" name="hact"  placeholder="Enter Honors of Acedemic Electives (Eg:3)" class="form-control" type="text" required>
+                    </div>
+                </div>
+                
+                
+                <div class="form-group col-md-6">
+                        <center><button type="submit" class="btn btn-success">Predict</button></center>
+                </div>
+               
+            </div>  
+
+                </form>
+
+        </div>
+                <br>
+                <!-- {% if prediction %}
+                <h4 style="color:tomato;">Patient Status: <b style="color:rgb(6, 182, 44);">{{prediction}}</b></h4>
+                <h4 style="color:tomato;">Patient Probability score: <b style="color:rgb(6, 182, 44);">{{proba_score}}%</b></h4>
+                {% endif %}
+                {% if message %}
+                <h4 style="color:tomato;">Message: <b style="color:rgb(6, 182, 44);">{{message}}</b></h4>
+                {% endif %} -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    img {
+        width:100%;
+    }
+</style>
+
+      <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <small>Copyright &copy;  @CDots</small>
+        </div>
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

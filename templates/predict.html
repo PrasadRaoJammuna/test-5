@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>CDots</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <h1>Your Results..</h1>
+
+
+    
+    {% if status %}
+
+    <h3>{{status}}</h3>
+        
+    {% endif %}
+        
+
+
+    <!-- Results here  -->
+   
+    <table class="table">
+        <thead class="thead-success">
+          <tr class="bg-success text-light text-center">
+            <th scope="col">#</th>
+            <th scope="col">College</th>
+            <th scope="col">Application Status</th>
+            <th scope="col">Trust Score</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {% for id , status,score in results %}
+          <tr>
+            <th scope="row">{{ loop.index }}</th>
+            <td class="text-center"><b>{{id}}</b></td>
+            
+            {% if status !='Accepted' %}
+            <td class="text-center bg-danger text-light"><b>{{status}}</b></td>
+            {% else %}
+            <td class="text-center"><b>{{status}}</b></td>
+            {% endif %}
+
+            {% if score< 0.5 %}
+            <td class="text-center text-warning"><b>{{score}}</b></td>
+            {% else %}
+            <td class="text-center"><b>{{score}}</b></td>
+            {% endif %}
+                
+            
+          </tr>
+          {% endfor %}
+
+        </tbody>
+      </table>
+      
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
